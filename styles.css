@@ -99,8 +99,7 @@ body {
   gap: 16px;
 }
 
-.user-icon,
-.settings-icon {
+.user-icon {
   width: 24px;
   height: 24px;
   color: #d4af37;
@@ -114,8 +113,8 @@ body {
 .settings-icon img {
    width: 24px;
   height: 24px;
-  object-fit: contain;
   vertical-align: middle;
+  object-fit: contain;
   cursor: pointer;
   filter: brightness(0) saturate(100%) invert(78%) sepia(40%) saturate(663%) hue-rotate(1deg) brightness(96%) contrast(95%);
 
