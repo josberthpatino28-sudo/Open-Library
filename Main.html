@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-height, initial-scale=1.0">
+  <title>Open Library - La Biblioteca Online</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <div class="menu-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </div>
+        
+        <div class="logo">
+          <h1>Open Library</h1>
+        </div>
+        
+        <div class="search-container">
+          <input type="text" placeholder="Search" class="search-input">
+          <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+        </div>
+        
+        <div class="header-icons">
+          <div class="user-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <div class="settings-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="logo-large">
+          <h1>Open Library</h1>
+          <p>La Biblioteca Online</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+      <div class="nav-container">
+        <button class="nav-item active">Categorías</button>
+        <button class="nav-item">Prestamos</button>
+        <button class="nav-item">Devoluciones</button>
+        <button class="nav-item">Formato</button>
+        <button class="nav-item">Filtrar</button>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <section class="featured-books">
+        <h2 class="section-title">LIBROS MEJOR VALORADOS</h2>
+        <div class="books-grid">
+          <div class="book-card">
+            <div class="book-image">
+              <img src="Libro1.jpg" alt="Título del Libro 1">
+              <div class="book-overlay">
+                <h3>Título del Libro 1</h3>
+              </div>
+            </div>
+          </div>
+          
+          <div class="book-card">
+            <div class="book-image">
+              <img src= "Libro2.jpg"  
+                   width="1083" height="650" alt="Título del Libro 2">
+              <div class="book-overlay">
+                <h3>Título del Libro 2</h3>
+              </div>
+            </div>
+          </div>
+          
+          <div class="book-card">
+            <div class="book-image">
+              <img src="Libro3.jpg"  
+                   width="433" height="650" alt="Título del Libro 3">
+              <div class="book-overlay">
+                <h3>Título del Libro 3</h3>
+              </div>
+            </div>
+          </div>
+          
+          <div class="book-card">
+            <div class="book-image">
+              <img src="Libro4.jpg"  
+                   width="433" height="650" alt="Título del Libro 4">
+              <div class="book-overlay">
+                <h3>Título del Libro 4</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
