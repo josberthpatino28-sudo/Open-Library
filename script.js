@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(() => {
       this.style.transform = 'rotate(0deg)';
     }, 200);
-    
+
     console.log('Menu clicked - implement sidebar/menu functionality');
   });
 
