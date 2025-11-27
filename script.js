@@ -4,9 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   navItems.forEach(item => {
     item.addEventListener('click', function() {
-      // Remove active class from all items
       navItems.forEach(nav => nav.classList.remove('active'));
-      // Add active class to clicked item
       this.classList.add('active');
     });
   });
@@ -30,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
     card.addEventListener('click', function() {
       const title = this.querySelector('.book-overlay h3').textContent;
       console.log(`Clicked on: ${title}`);
-      // Here you could add navigation to book details page
     });
   });
 
@@ -42,13 +39,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     
     if (scrollTop > lastScrollTop && scrollTop > 100) {
-      // Scrolling down
       header.style.transform = 'translateX(-50%) translateY(-100%)';
     } else {
-      // Scrolling up
       header.style.transform = 'translateX(-50%) translateY(0)';
     }
-    
     lastScrollTop = scrollTop;
   });
 
@@ -56,7 +50,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const menuIcon = document.querySelector('.menu-icon');
   
   menuIcon.addEventListener('click', function() {
-    // Toggle menu animation
     this.style.transform = 'rotate(90deg)';
     setTimeout(() => {
       this.style.transform = 'rotate(0deg)';
@@ -71,19 +64,15 @@ document.addEventListener('DOMContentLoaded', function() {
   
   userIcon.addEventListener('click', function() {
     console.log('User profile clicked');
-    // Implement user profile functionality
   });
   
   settingsIcon.addEventListener('click', function() {
     console.log('Settings clicked');
-    // Implement settings functionality
   });
 
-  // Add smooth scrolling for better UX
   document.documentElement.style.scrollBehavior = 'smooth';
 
-
- document.addEventListener('DOMContentLoaded', function() {
+  // SECOND DOMContentLoaded — remove it
   const images = document.querySelectorAll('img');
 
   const imageObserver = new IntersectionObserver((entries, observer) => {
@@ -91,12 +80,10 @@ document.addEventListener('DOMContentLoaded', function() {
       if (entry.isIntersecting) {
         const img = entry.target;
 
-        // Evitar reiniciar el opacity si ya es visible
         if (!img.classList.contains('visible')) {
           img.style.opacity = '0';
           img.style.transition = 'opacity 0.6s ease';
-          
-          // Si la imagen ya está cargada, hacer fade in inmediatamente
+
           if (img.complete) {
             img.style.opacity = '1';
             img.classList.add('visible');
